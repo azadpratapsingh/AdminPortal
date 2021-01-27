@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/mobileNumber"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twelve"
+            android:drawableLeft="@drawable/message_icon"
+            android:ems="10"
+            android:text="8587996220"
+            android:hint="@string/enter_phone_number"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/getOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twelve"
+            android:text="@string/send_otp"
+            android:onClick="getOtpOnClick"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff" />
+    </LinearLayout>>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/enterOtpHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twelve"
+            android:drawableLeft="@drawable/password"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/enter_otp"
+            android:inputType="number"
+            android:paddingLeft="5dp" />
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twelve"
+            android:text="@string/login"
+            android:onClick="performLogin"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Login Using Mobile Number"
+        tools:layout_editor_absoluteX="93dp"
+        android:textColor="#6ac451"
+        tools:layout_editor_absoluteY="103dp" />
+
+</LinearLayout>

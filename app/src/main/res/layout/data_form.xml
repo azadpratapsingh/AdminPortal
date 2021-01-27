@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/clientMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twelve"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="@string/client_mobile_number"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/validateMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:onClick="validateMobileNumber"
+                android:text="Validate mobile number"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="152dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dataEntryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/propertyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twelve"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="PG Name"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twelve"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="city"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/localArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twelve"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="area/locality"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/ownerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twelve"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="Owner Name(optional)"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/preferredLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twelve"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="Preferred Language(optional)"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/submitData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:onClick="submitData"
+                android:text="Submit"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="152dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataSubmissionActivity">
+
+    <Button
+        android:id="@+id/submitNewDataEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:text="Submit new Data Entry"
+        android:onClick="submitData"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/dataContainer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/submitted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Application Submitted   -000"
+            tools:layout_editor_absoluteX="93dp"
+            android:textColor="#6ac451"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <TextView
+            android:id="@+id/pendingApproval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Pedning Approval        -000"
+            tools:layout_editor_absoluteX="93dp"
+            android:textColor="#6ac451"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <TextView
+            android:id="@+id/approved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Applications Approved   -000"
+            tools:layout_editor_absoluteX="93dp"
+            android:textColor="#6ac451"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <TextView
+            android:id="@+id/rejected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Applications Rejected   -000"
+            tools:layout_editor_absoluteX="93dp"
+            android:textColor="#6ac451"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <TextView
+            android:id="@+id/leads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Lead Generated          -000"
+            tools:layout_editor_absoluteX="93dp"
+            android:textColor="#6ac451"
+            tools:layout_editor_absoluteY="103dp" />
+    </LinearLayout>
+</LinearLayout>
